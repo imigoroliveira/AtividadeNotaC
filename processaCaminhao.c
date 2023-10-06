@@ -36,6 +36,13 @@ int processaCaminhoes(Caminhao caminhoes[], int qntCaminhoes, int numeroMeses){
     }
 
 
+    for (int i = 0; i < numeroMeses; i++) {
+        printf("Mês %d:\n", i + 1);
+        printf("Consumo médio de gasolina: %.2f\n", consumosMensais[i]);
+        printf("Caminhão que transportou maior valor: Caminhão %d\n", caminhaoMaiorValorMes[i]);
+        printf("Quilometragem total percorrida pela frota: %.2f\n", quilometragemTotal[i]);
+        printf("\n");
+    }
 
     return 0;
 }
